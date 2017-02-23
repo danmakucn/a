@@ -1,3 +1,11 @@
-<!DOCTYPE html><html><head></head><body><script>function open_without_referrer(link){
-document.body.appendChild(document.createElement('iframe')).src='javascript:"<script>top.location.replace(\''+link+'\')<\/script>"';
-}('http://www.acfun.cn')</script></body></html>
+<html>
+<head></head>
+<body>
+<script>
+  function open_without_referrer(link) {
+    document.body.appendChild(document.createElement('iframe')).src = 'javascript:"<script>top.location.replace(\'' + link + '\')<\/script>"';
+  }
+  open_without_referrer('http://www.acfun.cn')
+</script>
+</body>
+</html>
